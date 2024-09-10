@@ -1,0 +1,17 @@
+{
+    "grant_token_url": "https://tokenized.sandbox.bka.sh/v1.2.0-beta/tokenized/checkout/token/grant",
+    "create_agreement_url": "https://tokenized.sandbox.bka.sh/v1.2.0-beta/tokenized/checkout/create",
+    "execute_agreement_url": "https://tokenized.sandbox.bka.sh/v1.2.0-beta/tokenized/checkout/execute",
+    "query_agreement_url": "https://tokenized.sandbox.bka.sh/v1.2.0-beta/tokenized/checkout/agreement/status",
+    "cancel_agreement_url": "https://tokenized.sandbox.bka.sh/v1.2.0-beta/tokenized/checkout/agreement/cancel",
+    "create_payment_url": "https://tokenized.sandbox.bka.sh/v1.2.0-beta/tokenized/checkout/create",
+    "execute_payment_url": "https://tokenized.sandbox.bka.sh/v1.2.0-beta/tokenized/checkout/execute",
+    "query_payment_url": "https://tokenized.sandbox.bka.sh/v1.2.0-beta/tokenized/checkout/payment/status",
+    "search_Transaction_url": "https://tokenized.sandbox.bka.sh/v1.2.0-beta/tokenized/checkout/general/searchTransaction",
+    "refund_payment_url": "https://tokenized.sandbox.bka.sh/v1.2.0-beta/tokenized/checkout/payment/refund",
+    "refund_status_url": "https://tokenized.sandbox.bka.sh/v1.2.0-beta/tokenized/checkout/payment/refund",
+    "username": "01770618567",
+    "password": "D7DaC<*E*eG",
+    "app_key": "0vWQuCRGiUX7EPVjQDr0EUAYtc",
+    "app_secret": "jcUNPBgbcqEDedNKdvE4G1cAK7D3hCjmJccNPZZBq96QIxxwAMEx"
+}
