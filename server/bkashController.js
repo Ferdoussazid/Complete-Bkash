@@ -208,8 +208,19 @@ router.post('/refundStatus', async (req, res) => {
 
 
 
-router.get('/callback', (req, res) => {
-    res.send('Callback received');
+router.get('/callback', async (req, res) => {
+    try {
+        const { paymentID, status } = req.query;
+        
+        if (status === 'success') {
+            const executeResponse = await executeAgreement(paymentID);
+            res.redirect(`/result?message=Agreement Created And Executed Successfully!&data=${encodeURIComponent(JSON.stringify(executeResponse))}`);
+        } else {
+            res.status(400).json({ message: 'Payment failed or was cancelled' });
+        }
+    } catch (error) {
+        res.status(500).json({ message: 'Failed to execute agreement', details: error.message });
+    }
 });
 
 module.exports = router;

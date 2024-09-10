@@ -8,7 +8,7 @@ const createAgreement = async () => {
 
         const requestData = {
             mode: "0000",
-            callbackURL: "http://localhost:3000/api/callback", 
+            callbackURL: "http://localhost:3000/api/execute-agreement",
             payerReference: "0173499999",
         };
 
