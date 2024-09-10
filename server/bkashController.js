@@ -23,19 +23,22 @@ router.post('/grant-token', async (req, res) => {
 });
 
 
+// bkash controller - router.post('/create-agreement')
 router.post('/create-agreement', async (req, res) => {
     try {
         const { redirectURL, bkashURL } = await createAgreement();
 
-        if (redirectURL) {
-            res.redirect(redirectURL);
-        } else {
-            res.status(500).json({ message: 'Redirect URL not found' });
-        }
+        // Send the response data as JSON instead of redirecting
+        res.json({
+            bkashURL,
+            redirectURL,
+            message: 'Agreement created successfully'
+        });
     } catch (error) {
         res.status(500).json({ message: 'Failed to create an agreement', details: error.message });
     }
 });
+
 
 
 router.post('/execute-agreement', async (req, res) => {
